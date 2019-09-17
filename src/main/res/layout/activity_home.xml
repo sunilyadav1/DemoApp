@@ -23,9 +23,10 @@
                     android:id="@+id/ivMovieBanar"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:maxHeight="290dp"
-                    android:minHeight="290dp"
-                    android:scaleType="fitXY" />
+                    android:maxHeight="@dimen/image_hight"
+                    android:scaleType="fitXY"
+                    android:minHeight="@dimen/image_hight"
+                     />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/txtMovieName"
@@ -36,7 +37,7 @@
                     android:layout_marginEnd="@dimen/spacing_medium"
                     android:layout_marginBottom="@dimen/spacing_small"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/font_normal" />
+                    android:textSize="@dimen/font_large" />
 
             </FrameLayout>
 
@@ -116,6 +117,39 @@
                 android:textColor="@color/white"
                 android:textSize="@dimen/font_normal"
                 tools:text="dsfafsf" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtBoxOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_medium"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginEnd="@dimen/spacing_medium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_normal"
+                tools:text="dsfafsf" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtProduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_medium"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginEnd="@dimen/spacing_medium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_normal"
+                tools:text="dsfafsf" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtWebsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_medium"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginEnd="@dimen/spacing_medium"
+                android:textColor="@color/white"
+                android:autoLink="all"
+                android:textSize="@dimen/font_normal"
+                tools:text="dsfafsf" />
+
 
         </androidx.appcompat.widget.LinearLayoutCompat>
     </ScrollView>

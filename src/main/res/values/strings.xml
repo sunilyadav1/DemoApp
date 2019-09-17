@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">Test</string>
+    <string name="appName">Assignment</string>
+    <string name="lable_year">Year:&#160;&#160;</string>
+    <string name="lable_director">Director:&#160;&#160;</string>
+    <string name="lable_writer">Writer:&#160;&#160;</string>
+    <string name="lable_rated">Rated:&#160;&#160;</string>
+    <string name="lable_actors">Actors:&#160;&#160;</string>
+    <string name="lable_plot">Plot:&#160;&#160;</string>
+    <string name="lable_awards">Awards:&#160;&#160;</string>
+    <string name="lable_boxoffice">BoxOffice:&#160;&#160;</string>
+    <string name="lable_production">Production:&#160;&#160;</string>
+    <string name="lable_webside">Website:&#160;&#160;</string>
 </resources>

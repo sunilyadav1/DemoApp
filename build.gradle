@@ -1,11 +1,10 @@
 apply plugin: 'com.android.application'
 
 
-
 /**
  * Define you Project Name here
  */
-def appName = 'Test'
+def appName = 'Assignment'
 
 /**
  * For Internal user only
