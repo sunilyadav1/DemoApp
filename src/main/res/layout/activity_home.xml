@@ -6,71 +6,117 @@
     android:background="@color/black"
     android:orientation="vertical">
 
-    <FrameLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/ivMovieBanar"
+        <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="250dp" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/txtMovieName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:textSize="@dimen/font_normal" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    </FrameLayout>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivMovieBanar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:maxHeight="290dp"
+                    android:minHeight="290dp"
+                    android:scaleType="fitXY" />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/txtDate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textSize="@dimen/font_normal"
-        tools:text="Years: 04 May 2012"
-        android:layout_marginTop="@dimen/spacing_small"
-        />
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/txtDirector"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textSize="@dimen/font_normal"
-        tools:text="Director:"
-        android:layout_marginTop="@dimen/spacing_small"
-        />
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/txtWriter"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textSize="@dimen/font_normal"
-        tools:text="Writer"
-        android:layout_marginTop="@dimen/spacing_small"
-        />
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/txtRated"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textSize="@dimen/font_normal"
-        tools:text="Rated"
-        android:layout_marginTop="@dimen/spacing_small"
-        />
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/txtDescription"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textSize="@dimen/font_normal"
-        tools:text="dsfafsf"
-        android:layout_marginTop="@dimen/spacing_small"
-        />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtMovieName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="@dimen/spacing_medium"
+                    android:layout_marginEnd="@dimen/spacing_medium"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_normal" />
 
+            </FrameLayout>
 
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_medium"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginEnd="@dimen/spacing_medium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_normal"
+                tools:text="Years: 04 May 2012" />
 
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtDirector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_medium"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginEnd="@dimen/spacing_medium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_normal"
+                tools:text="Director:" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtWriter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_medium"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginEnd="@dimen/spacing_medium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_normal"
+                tools:text="Writer" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtRated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_medium"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginEnd="@dimen/spacing_medium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_normal"
+                tools:text="Rated" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtActors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_medium"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginEnd="@dimen/spacing_medium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_normal"
+                tools:text="dsfafsf" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtPlot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_medium"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginEnd="@dimen/spacing_medium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_normal"
+                tools:text="dsfafsf" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtAwards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_medium"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginEnd="@dimen/spacing_medium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_normal"
+                tools:text="dsfafsf" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
 </androidx.appcompat.widget.LinearLayoutCompat>
