@@ -10,4 +10,5 @@
     <string name="lable_boxoffice">BoxOffice:&#160;&#160;</string>
     <string name="lable_production">Production:&#160;&#160;</string>
     <string name="lable_webside">Website:&#160;&#160;</string>
+    <string name="welcome">Welcome</string>
 </resources>
