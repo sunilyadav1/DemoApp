@@ -1,12 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     android:orientation="vertical">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvMovieList"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivMovieBanar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="250dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtMovieName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:textSize="@dimen/font_normal" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_normal"
+        tools:text="Years: 04 May 2012"
+        android:layout_marginTop="@dimen/spacing_small"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtDirector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_normal"
+        tools:text="Director:"
+        android:layout_marginTop="@dimen/spacing_small"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtWriter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_normal"
+        tools:text="Writer"
+        android:layout_marginTop="@dimen/spacing_small"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtRated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_normal"
+        tools:text="Rated"
+        android:layout_marginTop="@dimen/spacing_small"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_normal"
+        tools:text="dsfafsf"
+        android:layout_marginTop="@dimen/spacing_small"
+        />
+
+
 
 </androidx.appcompat.widget.LinearLayoutCompat>

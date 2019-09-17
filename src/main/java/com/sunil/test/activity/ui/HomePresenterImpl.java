@@ -28,7 +28,7 @@ public class HomePresenterImpl implements HomePresenter {
         homeInteractor.getMovieList(new HomeInteractor.ApiListener() {
             @Override
             public void onSuccess(final MovieDetails response) {
-
+                homeView.movieDetailsApiResponse(response);
             }
 
             @Override

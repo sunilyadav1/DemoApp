@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_gravity="center"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal">
 
 
@@ -26,7 +26,7 @@
         android:layout_marginEnd="@dimen/spacing_small"
         android:layout_toEndOf="@+id/ivMovie"
         android:layout_toRightOf="@+id/ivMovie"
-        android:text="1bc"
+        tools:text="1bc"
         android:textColor="@color/cardview_dark_background"
         android:textSize="@dimen/font_large" />
 
