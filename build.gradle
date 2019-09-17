@@ -40,7 +40,7 @@ android {
 
     productFlavors {
         dev {
-            buildConfigField 'String', 'BASE_URL', '"http://www.omdbapi.com/"'
+            buildConfigField 'String', 'BASE_URL', '"http://www.omdbapi.com"'
 
         }
 

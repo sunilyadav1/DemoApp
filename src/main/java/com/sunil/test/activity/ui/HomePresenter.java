@@ -1,7 +1,10 @@
 package com.sunil.test.activity.ui;
 
-import com.sunil.test.activity.base.BasePresenter;
+public interface HomePresenter {
 
-public interface HomePresenter extends BasePresenter {
-    public void getMovieList();
+    void onAttach();
+
+    void onDetach();
+
+    void getMovieList();
 }

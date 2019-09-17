@@ -11,14 +11,16 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.sunil.test.R;
 
 public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.MyViewHolder> {
-    private  Context mContext;
-    public MovieListAdapter(final Context context){
-        this.mContext=context;
+    private Context mContext;
+
+    public MovieListAdapter(final Context context) {
+        this.mContext = context;
     }
+
     @NonNull
     @Override
     public MovieListAdapter.MyViewHolder onCreateViewHolder(@NonNull final ViewGroup parent, final int viewType) {
-        return new MyViewHolder(LayoutInflater.from(mContext).inflate(R.layout.item_movie_list,parent,false));
+        return new MyViewHolder(LayoutInflater.from(mContext).inflate(R.layout.item_movie_list, parent, false));
     }
 
     @Override

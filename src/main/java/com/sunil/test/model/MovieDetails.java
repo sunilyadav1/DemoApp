@@ -9,7 +9,7 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-public class GetMovieRespons implements Parcelable
+public class MovieDetails implements Parcelable
 {
 
     @SerializedName("Title")
@@ -87,24 +87,24 @@ public class GetMovieRespons implements Parcelable
     @SerializedName("Response")
     @Expose
     private String response;
-    public final static Creator<GetMovieRespons> CREATOR = new Creator<GetMovieRespons>() {
+    public final static Creator<MovieDetails> CREATOR = new Creator<MovieDetails>() {
 
 
         @SuppressWarnings({
             "unchecked"
         })
-        public GetMovieRespons createFromParcel(Parcel in) {
-            return new GetMovieRespons(in);
+        public MovieDetails createFromParcel(Parcel in) {
+            return new MovieDetails(in);
         }
 
-        public GetMovieRespons[] newArray(int size) {
-            return (new GetMovieRespons[size]);
+        public MovieDetails[] newArray(int size) {
+            return (new MovieDetails[size]);
         }
 
     }
     ;
 
-    protected GetMovieRespons(Parcel in) {
+    protected MovieDetails(Parcel in) {
         this.title = ((String) in.readValue((String.class.getClassLoader())));
         this.year = ((String) in.readValue((String.class.getClassLoader())));
         this.rated = ((String) in.readValue((String.class.getClassLoader())));
@@ -132,7 +132,7 @@ public class GetMovieRespons implements Parcelable
         this.response = ((String) in.readValue((String.class.getClassLoader())));
     }
 
-    public GetMovieRespons() {
+    public MovieDetails() {
     }
 
     public String getTitle() {

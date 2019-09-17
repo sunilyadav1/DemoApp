@@ -1,6 +1,6 @@
 package com.sunil.test.network;
 
-import com.sunil.test.model.GetMovieRespons;
+import com.sunil.test.model.MovieDetails;
 
 import java.util.Map;
 
@@ -11,6 +11,5 @@ import retrofit2.http.QueryMap;
 public interface ApiInterface {
 
     @GET("/")
-    Call<GetMovieRespons>getMoviewList(@QueryMap Map<String,String> map);
-    //Call<GetMovieRespons>getMoviewList(@Query("i") String indexKey,@Query("apikey")String apiKey);
+    Call<MovieDetails> getMovieList(@QueryMap Map<String, String> map);
 }

@@ -1,23 +1,33 @@
 package com.sunil.test.activity.ui;
 
-import com.sunil.test.activity.base.BaseInteractor;
-import com.sunil.test.activity.base.BasePresenterImpl;
+import com.sunil.test.model.MovieDetails;
 
-public class HomePresenterImpl extends BasePresenterImpl implements HomePresenter {
+public class HomePresenterImpl implements HomePresenter {
+    private boolean mIsViewAttached = true;
     private HomeInteractor homeInteractor;
     private HomeView homeView;
 
-    public HomePresenterImpl(final HomeView homeView){
-        this.homeView=homeView;
-        this.homeInteractor=new HomeInteractorImpl();
+    public HomePresenterImpl(final HomeView homeView) {
+        this.homeView = homeView;
+        this.homeInteractor = new HomeInteractorImpl();
 
     }
 
     @Override
+    public void onAttach() {
+        mIsViewAttached = true;
+    }
+
+    @Override
+    public void onDetach() {
+        mIsViewAttached = true;
+    }
+
+    @Override
     public void getMovieList() {
-        homeInteractor.getMovieList(new BaseInteractor.ApiListener() {
+        homeInteractor.getMovieList(new HomeInteractor.ApiListener() {
             @Override
-            public void onSuccess(final String s) {
+            public void onSuccess(final MovieDetails response) {
 
             }
 
